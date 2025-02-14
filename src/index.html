@@ -12,9 +12,14 @@
     <title>Frontend Mentor | Bento grid</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-[#f5f5f5]">
-    <main class="grid gap-y-8 px-4 pb-11 pt-8">
-      <div class="rounded-[0.6rem] bg-e_purple500 px-10 py-10 text-center">
+  <body class="flex h-[100vh] justify-center bg-[#f5f5f5] align-middle">
+    <!-- 12 columns and 10 rows -->
+    <main
+      class="grid gap-y-8 px-4 pb-11 pt-8 md:max-w-[70rem] md:grid-cols-12 md:grid-rows-10 md:gap-x-8"
+    >
+      <div
+        class="rounded-[0.6rem] bg-e_purple500 px-10 py-10 text-center md:col-start-4 md:col-end-10 md:row-start-1 md:row-end-5"
+      >
         <p
           class="text-[45px] font-e_weightMedium leading-[2.65rem] tracking-[0.035rem] text-e_white"
         >
@@ -30,7 +35,9 @@
           Over 4,000 5-star reviews
         </p>
       </div>
-      <div class="grid gap-y-4 rounded-[0.6rem] bg-e_white px-4 py-4">
+      <div
+        class="grid gap-y-4 rounded-[0.6rem] bg-e_white px-4 py-4 md:col-start-4 md:col-end-7 md:row-start-5 md:row-end-8"
+      >
         <div class="max-w-[21rem]">
           <img
             src="../assets/images/illustration-multiple-platforms.webp"
@@ -45,7 +52,7 @@
         </p>
       </div>
       <div
-        class="grid max-h-[215px] gap-y-4 overflow-hidden rounded-[0.6rem] bg-e_yellow500 px-4 py-4"
+        class="grid max-h-[215px] gap-y-4 overflow-hidden rounded-[0.6rem] bg-e_yellow500 px-4 py-4 md:col-start-7 md:col-end-10 md:row-start-5 md:row-end-8"
       >
         <p
           class="max-w-[300px] text-[25px] font-semibold leading-[1.5rem] tracking-tighter text-e_black"
@@ -61,7 +68,7 @@
         </div>
       </div>
       <div
-        class="grid place-items-center gap-y-6 rounded-[0.6rem] bg-e_purple100 px-[18px] py-8 text-center"
+        class="grid place-items-center gap-y-6 rounded-[0.6rem] bg-e_purple100 px-[18px] py-8 text-center md:col-start-10 md:col-end-13 md:row-start-1 md:row-end-8"
       >
         <p class="text-[25px] font-semibold leading-[1.5rem] tracking-tighter">
           Schedule to social media.
@@ -78,12 +85,13 @@
         </p>
       </div>
       <div
-        class="grid place-items-center gap-y-10 rounded-[0.6rem] bg-e_purple500 px-[58px] py-6 text-center"
+        class="grid place-items-center gap-y-10 rounded-[0.6rem] bg-e_purple500 px-[58px] py-6 text-center md:col-start-7 md:col-end-13 md:row-start-8 md:row-end-11 md:flex"
       >
         <div class="max-w-[21rem]">
           <img
             src="../assets/images/illustration-grow-followers.webp"
             alt="bar chart"
+            class="max-h-[12.5rem]"
           />
         </div>
         <p
@@ -92,7 +100,9 @@
           Grow followers with non-stop content.
         </p>
       </div>
-      <div class="grid rounded-[0.6rem] bg-e_white px-[24px] pb-6 pt-2">
+      <div
+        class="grid rounded-[0.6rem] bg-e_white px-[24px] pb-6 pt-2 md:col-start-4 md:col-end-7 md:row-start-8 md:row-end-11"
+      >
         <p class="text-[46px] font-e_weightMedium text-e_black">>56%</p>
         <p class="text-[18px]">faster audience growth</p>
         <img
@@ -101,7 +111,9 @@
           class="mt-5 max-h-[67px]"
         />
       </div>
-      <div class="grid gap-y-6 rounded-[0.6rem] bg-e_yellow100 px-[32px] py-8">
+      <div
+        class="grid gap-y-6 rounded-[0.6rem] bg-e_yellow100 px-[32px] py-8 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-6"
+      >
         <p class="text-[32px] font-semibold leading-[1.75rem] tracking-tighter">
           Create and schedule content
           <span class="italic text-e_purple500">quicker</span>.
@@ -112,7 +124,9 @@
           class="max-h-[5.675rem]"
         />
       </div>
-      <div class="grid gap-y-6 rounded-[0.6rem] bg-e_yellow500 px-[25px] py-6">
+      <div
+        class="grid gap-y-6 rounded-[0.6rem] bg-e_yellow500 px-[25px] py-6 md:col-start-1 md:col-end-4 md:row-start-6 md:row-end-11"
+      >
         <p class="text-[32px] font-semibold leading-[1.75rem] tracking-tighter">
           Write your content using AI.
         </p>
