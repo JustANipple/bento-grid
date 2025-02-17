@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -130,7 +132,7 @@
 
 ::before,
 ::after {
-  --tw-content: '';
+  --tw-content: "";
 }
 
 /*
@@ -152,9 +154,11 @@ html,
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -197,7 +201,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -243,7 +247,9 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -344,9 +350,9 @@ select {
 */
 
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+input:where([type="button"]),
+input:where([type="reset"]),
+input:where([type="submit"]) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -393,7 +399,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -486,7 +492,8 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -579,18 +586,6 @@ video {
   display: grid;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-\[20rem\] {
-  height: 20rem;
-}
-
-.h-full {
-  height: 100%;
-}
-
 .max-h-8 {
   max-height: 2rem;
 }
@@ -613,6 +608,10 @@ video {
 
 .max-h-\[67px\] {
   max-height: 67px;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
 }
 
 .w-52 {
@@ -758,6 +757,10 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-8 {
@@ -944,14 +947,6 @@ body {
     grid-row-end: 8;
   }
 
-  .md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .md\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -960,24 +955,34 @@ body {
     display: grid;
   }
 
-  .md\:h-20 {
-    height: 5rem;
+  .md\:h-\[10rem\] {
+    height: 10rem;
   }
 
-  .md\:h-32 {
-    height: 8rem;
+  .md\:max-h-\[6rem\] {
+    max-height: 6rem;
+  }
+
+  .md\:max-h-fit {
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+
+  .md\:max-h-full {
+    max-height: 100%;
+  }
+
+  .md\:w-\[20rem\] {
+    width: 20rem;
   }
 
   .md\:w-\[22\.4rem\] {
     width: 22.4rem;
   }
 
-  .md\:w-10 {
-    width: 2.5rem;
-  }
-
-  .md\:w-52 {
-    width: 13rem;
+  .md\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .md\:max-w-\[23rem\] {
@@ -986,10 +991,6 @@ body {
 
   .md\:max-w-\[70rem\] {
     max-width: 70rem;
-  }
-
-  .md\:max-w-\[60rem\] {
-    max-width: 60rem;
   }
 
   .md\:grid-cols-12 {
@@ -1008,37 +1009,57 @@ body {
     place-items: start;
   }
 
-  .md\:gap-x-8 {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
-  .md\:gap-y-0 {
-    row-gap: 0px;
+  .md\:gap-x-8 {
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
   }
 
   .md\:gap-y-10 {
     row-gap: 2.5rem;
   }
 
-  .md\:gap-y-5 {
-    row-gap: 1.25rem;
+  .md\:gap-y-2 {
+    row-gap: 0.5rem;
   }
 
-  .md\:gap-y-8 {
-    row-gap: 2rem;
-  }
-
-  .md\:gap-y-7 {
-    row-gap: 1.75rem;
+  .md\:gap-y-3 {
+    row-gap: 0.75rem;
   }
 
   .md\:overflow-hidden {
     overflow: hidden;
   }
 
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
   .md\:text-wrap {
     text-wrap: wrap;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:px-\[22px\] {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .md\:px-\[52px\] {
+    padding-left: 52px;
+    padding-right: 52px;
   }
 
   .md\:py-\[5\.25rem\] {
@@ -1046,48 +1067,60 @@ body {
     padding-bottom: 5.25rem;
   }
 
-  .md\:py-\[52px\] {
-    padding-top: 52px;
-    padding-bottom: 52px;
-  }
-
-  .md\:px-\[45px\] {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  .md\:px-\[50px\] {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .md\:px-\[70px\] {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-
-  .md\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
-  .md\:pt-\[52px\] {
-    padding-top: 52px;
-  }
-
-  .md\:pb-\[8px\] {
-    padding-bottom: 8px;
-  }
-
-  .md\:pb-\[20px\] {
-    padding-bottom: 20px;
-  }
-
   .md\:pb-\[40px\] {
     padding-bottom: 40px;
   }
 
+  .md\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .md\:pl-\[25px\] {
+    padding-left: 25px;
+  }
+
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .md\:pr-2 {
+    padding-right: 0.5rem;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem;
+  }
+
+  .md\:pr-\[12px\] {
+    padding-right: 12px;
+  }
+
+  .md\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
+  .md\:pt-\[23px\] {
+    padding-top: 23px;
+  }
+
+  .md\:pt-\[50px\] {
+    padding-top: 50px;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-start {
+    text-align: start;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .md\:text-\[32px\] {
+    font-size: 32px;
   }
 
   .md\:text-\[33px\] {
@@ -1106,6 +1139,18 @@ body {
     font-weight: 500;
   }
 
+  .md\:font-medium {
+    font-weight: 500;
+  }
+
+  .md\:leading-7 {
+    line-height: 1.75rem;
+  }
+
+  .md\:leading-\[1\.75rem\] {
+    line-height: 1.75rem;
+  }
+
   .md\:leading-\[2\.25rem\] {
     line-height: 2.25rem;
   }
@@ -1116,5 +1161,9 @@ body {
 
   .md\:tracking-normal {
     letter-spacing: 0em;
+  }
+
+  .md\:tracking-tight {
+    letter-spacing: -0.025em;
   }
 }
